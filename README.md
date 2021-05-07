@@ -1,1 +1,28 @@
 # Metacritic Review Summary Sentiment Analysis
+
+# Introduction
+
+As part of its review aggregation process, Metacritic.com tries to give an idea of the contents of a critic review by quoting parts of it. The goal of this project is to assess the effectiveness of Metacritic's review summarization methods in conveying the overall sentiment of a review.
+
+Review summaries are scraped for each video game listed on the webpage https://www.metacritic.com/browse/games/score/metascore/all/all/filtered and analyzed for sentiment using neural networks.
+
+# Technical
+* Dataset scraped with Scrapy and stored with SQLite, with the spiders in 'games.py' and 'analyze.py' from https://github.com/Markel/metacritic-crawler (credit to @Markel). Please visit page for more details on usage.
+* To run spider in 'reviews.py', simply run
+```console
+scrapy runspider games.py
+```
+* Jupyter notebook metacritic_sent_analy.ipynb was run on Google Colab Pro
+* Written Python 3
+* Uses PyTorch, NLTK, TextBlob, Pandas along with some standard libraries
+* Uses the 50d GloVe embedding provided by the Stanford NLP group. If you wish to run the notebook you must have the corresponding file in your working directory. To obtain the file, you can run the following commands from a terminal:
+* 
+```console
+wget http://nlp.stanford.edu/data/glove.6B.zip
+unzip -j glove.6B.zip '*50d*'
+rm glove.6B.zip
+```
+
+# Other
+* Scraped data is not included as it is protected by copyright
+* Trained PyTorch model can be downloaded here: https://drive.google.com/file/d/14ARwsqiseAG9SlzATdfzoZHyas8kGXdx/view?usp=sharing
