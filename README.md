@@ -7,7 +7,7 @@ As part of its review aggregation process, Metacritic.com tries to give an idea 
 Review summaries are scraped for each video game listed on the webpage https://www.metacritic.com/browse/games/score/metascore/all/all/filtered and analyzed for sentiment using neural networks.
 
 # Technical
-* Dataset scraped with Scrapy and stored with SQLite, with the spiders in 'games.py' and 'analyze.py' from https://github.com/Markel/metacritic-crawler (credit to @Markel). Please visit page for more details on usage.
+* Dataset scraped with Scrapy and stored with SQLite. Spiders in 'games.py' and 'analyze.py' adapted from https://github.com/Markel/metacritic-crawler (credit to @Markel). Please visit page for more details on usage.
 * To run spider in 'reviews.py', simply run
 ```console
 scrapy runspider games.py
