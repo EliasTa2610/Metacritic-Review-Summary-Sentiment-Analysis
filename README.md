@@ -19,7 +19,7 @@ scrapy runspider games.py
 ```
 * Written Python 3
 * Uses Scrapy, SQLite, PyTorch, NLTK, TextBlob, Pandas along with some standard libraries
-* Uses the 50d GloVe embedding provided by the Stanford NLP group. If you wish to run the notebook you must have the corresponding file in your working directory. To obtain the file, you can run the following commands from a terminal:
+* Uses the 50d GloVe embedding provided by the Stanford NLP group. If you wish to run the notebook you must have the corresponding file in your working directory. To obtain it, run the following commands from a terminal:
 ```console
 wget http://nlp.stanford.edu/data/glove.6B.zip
 unzip -j glove.6B.zip '*50d*'
