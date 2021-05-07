@@ -13,6 +13,10 @@ Review summaries are scraped for each video game listed on the webpage https://w
 scrapy runspider games.py
 ```
 * Jupyter notebook metacritic_sent_analy.ipynb was run on Google Colab Pro
+* To view progress bars shown at training step properly, install pywidgets. You can do so at the beginning of the notebook by executing
+```console
+!pip install ipywidgets
+```
 * Written Python 3
 * Uses PyTorch, NLTK, TextBlob, Pandas along with some standard libraries
 * Uses the 50d GloVe embedding provided by the Stanford NLP group. If you wish to run the notebook you must have the corresponding file in your working directory. To obtain the file, you can run the following commands from a terminal:
@@ -21,6 +25,7 @@ wget http://nlp.stanford.edu/data/glove.6B.zip
 unzip -j glove.6B.zip '*50d*'
 rm glove.6B.zip
 ```
+Alternatively, you can run these commands from the notebook by preprending each with an exclamation mark.
 
 # Other
 * Scraped data is not included as it is protected by copyright
