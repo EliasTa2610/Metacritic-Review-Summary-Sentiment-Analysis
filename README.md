@@ -29,4 +29,3 @@ Alternatively, you can run these commands from the notebook by preprending each 
 
 # Other
 * Scraped data is not included as it is protected by copyright
-* Trained PyTorch model can be downloaded here: https://drive.google.com/file/d/1bvuXoIZTcbkxD52zDc1dB-I0Nq6o84Fm/view?usp=sharing
