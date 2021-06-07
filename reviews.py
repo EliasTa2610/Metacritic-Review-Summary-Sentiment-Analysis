@@ -14,7 +14,6 @@ links = cur.fetchall()
 links_ls = ['https://www.metacritic.com' + link[0] for link in links]
 
 # Create table to contain critics reviews
-cur.execute('DROP TABLE critics_reviews')
 cur.execute('''create table critics_reviews(
             title text,
             platform text,
