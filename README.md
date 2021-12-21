@@ -10,7 +10,7 @@ Review summaries are scraped for each video game listed on the webpage https://w
 * Dataset scraped with Scrapy and stored with SQLite. Spiders in 'games.py' and 'analyze.py' adapted from https://github.com/Markel/metacritic-crawler (credit to @Markel). Please visit page for more details on usage.
 * To run spider in 'reviews.py', simply run
 ```console
-scrapy runspider games.py
+scrapy runspider reviews.py
 ```
 * Jupyter notebook metacritic_sent_analy.ipynb was run on Google Colab Pro
 * To view progress bars shown at training step properly, install pywidgets. You can do so at the beginning of the notebook by executing
